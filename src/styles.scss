@@ -1,1 +1,97 @@
 /* You can add global styles to this file, and also import other style files */
+@import './globalstyles/colours.scss';
+@import './globalstyles/fonts.scss';
+@import './globalstyles/buttons.scss';
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.f-18{
+    font-size: 18px;
+}
+.f-17{
+    font-size: 17px;
+}
+.f-16{
+    font-size: 16px;
+}
+.f-15{
+    font-size: 15px;
+}
+.f-14{
+    font-size: 14px;
+}
+.f-13{
+    font-size: 13px;
+}
+.pr-5{
+    padding-right: 3rem;
+}
+.bold{
+    font-weight: bold;
+}
+
+
+::-webkit-scrollbar {
+    width: 14px;
+    height: 10px;
+    background-color: #F1F1F1;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 1px;
+    background-color: #C1C1C1;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+        background-color: #A8A8A8;
+    }
+::-webkit-scrollbar-thumb:horizontal {
+        border-top: 2px solid #F1F1F1;
+        border-bottom: 2px solid #F1F1F1;
+    }
+::-webkit-scrollbar-thumb:vertical {
+        border-left: 2px solid #F1F1F1;
+        border-right: 2px solid #F1F1F1;
+    }
+
+::-webkit-scrollbar-thumb:active {
+        background-color: #787878;
+    }
+::-webkit-scrollbar-track {
+    background-color: #F1F1F1;
+}
+
+
+/* Buttons */
+::-webkit-scrollbar-button {
+    background-color: #F1F1F1;
+    background-repeat: no-repeat;
+    background-size: 7px;
+    background-position: center;
+    height: 14px;
+    width: 14px;
+}
+
+::-webkit-scrollbar-button:hover {
+    background-color: #d2d2d2;
+}
+
+::-webkit-scrollbar-button:active {
+    background-color: #787878;
+}
+    ::-webkit-scrollbar-button:vertical:decrement {
+        background-image: url("./assets/images/scroll_down_arrow.png");
+        opacity: 0.2;
+    }
+    ::-webkit-scrollbar-button:vertical:increment {
+        background-image: url("./assets/images/scroll_up_arrow.png")
+    }
+    ::-webkit-scrollbar-button:horizontal:decrement {
+        background-image: url("./assets/images/scroll_left.png");
+    }
+
+    ::-webkit-scrollbar-button:horizontal:increment {
+        background-image: url("./assets/images/scroll_right.png");
+    }

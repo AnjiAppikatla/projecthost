@@ -1,0 +1,165 @@
+<div style="position: relative;">
+  <div class="container-fluid pt-2">
+    <div class="row mt-4">
+      <div class="col-md-3 d-flex align-items-center justify-content-end">
+        <img src="../../assets/images/logo.webp" alt="">
+      </div>
+      <div class="col-md-6 d-flex align-items-center justify-content-center">
+        <div class="nav">
+          <ul>
+            <li *ngFor="let data of navList" type="{{data?.flag}}">{{data?.name}}</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 d-flex align-items-center justify-content-center">
+       <button class="btn contact_us px-5 text-dark">Contact Us</button>
+      </div>
+    </div>
+    <div class="Main_logo">
+      <img src="../../assets/images/main-bg.webp" alt="">
+    </div>
+    <div class="row">
+      <div class="col-md-12 py-3">
+        <h2 class="heading_color text-center">Future-Ready Experiential Learning for K-12</h2>
+      </div>
+    </div>
+  
+  </div>
+  
+  <div class="container">
+      <div class="row mb-5" style="margin-top: 150px;">
+          <div class="col-md-6">
+            <img src="../../assets/images/Artwork-5.webp" alt="" class="rocket_img d-none">
+            <div class="round_bg"></div>
+            <h2>Joyful Experiences</h2>
+            <p class="mt-5 pr-5">Yardstick's vision is to make learning enriching and joyful experience. Yardstick designs and implements learning programs for children, engaging their keen, inquisitive and imaginative minds via holistic experiential learning modules.</p>
+            <button class="el_btn el_btn_dark">Know More</button>
+          </div>
+          <div class="col-md-5 bg-dark"></div>
+        </div>
+  
+        <div class="row border-top border-secondary">
+          <div class="col-md-6 offset-3 text-center py-5">
+            <h2> Our Products</h2>
+            <p class="f-18">Based on Child Centered Experiential Learning </p>
+            <p>Activities are customized for the state standards, the school curriculum and the teacher needs. It engages learners in a complete experiential learning cycle and all cognitive domains of the bloom's taxonomy.  </p>
+          </div>
+        </div>
+  
+        <div class="row mt-5">
+          <div class="col-md-4 p-3" *ngFor="let data of products">
+            <div class="product_card" id="data?.flag">
+              <button class="el_btn el_btn_dark product_card_btn">{{data?.name}}</button>
+            </div>
+          </div>
+        </div>
+  
+        <div class="row mb-5" style="margin-top: 150px;">
+          <div class="col-md-12 text-center">
+            <h2>Pride Model</h2>
+            <p class="f-18">Yardstick's Curriculum Taxonomy for Learning</p>
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col-md-12 d-flex justify-content-evenly">
+            <div class="pride_list" *ngFor="let data of prideList">
+              <div class="list_bg">
+                <img src="../../assets/images/pride_imgs/{{data?.img}}.webp" alt="">
+              </div>
+              <p class="text-center">{{data?.name}}</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="row" style="margin-top: 150px;">
+          <div class="col-md-12">
+            <h2 class="text-center">Our clients</h2>
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col-md-12">
+            <div class="slideshow-container d-flex justify-content-center">
+              <div *ngFor="let image of images; let i = index">
+                <div [ngClass]="{ 'fade': i === currentIndex ? true : false}">
+                  <img src="../../assets/images/pride_imgs/{{image?.img}}" alt="Slide">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+  
+  
+  </div>
+  
+  <div class="container-fluid py-5" style="background-color: aliceblue;">
+    <div class="row">
+      <div class="col-md-6 offset-3">
+        <h4 class="text-center">“The important thing is not to stop questioning. Curiosity has its own reason for existence.</h4>
+        <h3 class="text-center">- Albert Einstein</h3>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container-fluid bg-dark text-white p-3">
+    <div class="row">
+      <div class="col-md-10 offset-1">
+  
+        <div class="row">
+          <div class="col-md-6">
+            <p class="bold">E Mail: ping@yardstickedu.com</p>
+          </div>
+        </div>
+  
+        <div class="row mt-3">
+          <div class="col-md-3 p-2">
+            <h4>USA</h4>
+            <p>Yardstick Innovations LLC</p>
+            <p>16192, Coastal Highway, Lewes</p>
+            <p>Delaware 19958 - USA</p>
+            <p>Phone: +1 (302) 520-3538</p>
+          </div>
+          <div class="col-md-3 p-2">
+            <h4>USA</h4>
+            <p>Yardstick Innovations LLC</p>
+            <p>16192, Coastal Highway, Lewes</p>
+            <p>Delaware 19958 - USA</p>
+            <p>Phone: +1 (302) 520-3538</p>
+          </div>
+          <div class="col-md-3 p-2">
+            <h4>USA</h4>
+            <p>Yardstick Innovations LLC</p>
+            <p>16192, Coastal Highway, Lewes</p>
+            <p>Delaware 19958 - USA</p>
+            <p>Phone: +1 (302) 520-3538</p>
+          </div>
+          <div class="col-md-3 p-2">
+            <h4>USA</h4>
+            <p>Yardstick Innovations LLC</p>
+            <p>16192, Coastal Highway, Lewes</p>
+            <p>Delaware 19958 - USA</p>
+            <p>Phone: +1 (302) 520-3538</p>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+
+
+  <div style="position: fixed;right: 0px;top: 33vh;width: 30px;">
+    <svg style="width: 30px;height: 50vh;">
+       <circle cx="10" class="right_dot_nav" cy="10" r="7" stroke="#F6B250" stroke-width="3"/>
+       <circle cx="10" class="right_dot_nav" cy="50" r="7" stroke="#F6B250" stroke-width="3"/>
+       <circle cx="10" class="right_dot_nav" cy="90" r="7" stroke="#F6B250" stroke-width="3"/>
+       <circle cx="10" class="right_dot_nav" cy="130" r="7" stroke="#F6B250" stroke-width="3"/>
+       <circle cx="10" class="right_dot_nav" cy="170" r="7" stroke="#F6B250" stroke-width="3"/>
+       <circle cx="10" class="right_dot_nav" cy="210" r="7" stroke="#F6B250" stroke-width="3"/>
+    Sorry, your browser does not support inline SVG.
+    </svg>
+  </div>
+
+</div>
+
