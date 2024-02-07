@@ -6,6 +6,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    font-family: $fontfamily_1;
 }
 .f-18{
     font-size: 18px;
@@ -27,6 +28,9 @@
 }
 .pr-5{
     padding-right: 3rem;
+}
+.pl-5{
+    padding-left: 3rem;
 }
 .bold{
     font-weight: bold;

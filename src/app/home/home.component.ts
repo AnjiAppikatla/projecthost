@@ -8,13 +8,6 @@ declare var $: any;
 })
 export class HomeComponent implements OnInit {
 
-  navList = [
-    {name: 'Home', flag: 'HM'},
-    {name: 'Gallery', flag: 'GL'},
-    {name: 'Activities', flag: 'AC'},
-    {name: 'Partnership', flag: 'PT'},
-    {name: 'Competition', flag: 'CP'},
-  ]
   products = [
     {name: 'BeeCurious', flag: 'BC'},
     {name: 'Quabits', flag: 'QB'},
@@ -23,6 +16,20 @@ export class HomeComponent implements OnInit {
     {name: 'Litmus', flag: 'LT'},
     {name: 'School Management', flag: 'SM'}
   ]
+
+  aboutuslist = [
+    {name: 'About Us', flag: 'AU'},
+    {name: 'Toxonomy', flag: 'TX'}
+  ]
+
+  navList = [
+    {name: 'Home', flag: 'HM', sublist: []},
+    {name: 'About', flag: 'AB', sublist: this.products},
+    {name: 'Products', flag: 'PD', sublist: this.aboutuslist},
+    {name: 'Partnership', flag: 'PT', sublist: []},
+    {name: 'Competition', flag: 'CP', sublist: []},
+  ]
+ 
 
   prideList = [
     {name: 'Progress', flag: 'PG', img: 'prd-1'},
@@ -55,13 +62,35 @@ export class HomeComponent implements OnInit {
     //     console.log('Page is not scrolled');
     //   }
     // });
-   this.startSlideshow()
+  //  this.startSlideshow()
+  
   }
 
-  startSlideshow() {
-    setInterval(() => {
-      this.currentIndex = (this.currentIndex + 1) % this.images.length;
-    }, 2000);
+  // startSlideshow() {
+  //   setInterval(() => {
+  //     this.currentIndex = (this.currentIndex + 1) % this.images.length;
+  //   }, 2000);
+  // }
+
+  openNav() {
+    $("#mySidenav").css('width','350px');
+    $('.main-li').find('ul').hide('1000')
+  }
+  
+  closeNav() {
+    $("#mySidenav").css('width','0px');
+    $('.main-li').find('ul').hide('1000')
+  }
+
+  uldisplay(ele:any){
+    $('.sidebar_nav').find('li').removeClass('sidebar_nav_active')
+    $(ele.target).addClass('sidebar_nav_active')
+    $('.main-li').find('ul').hide('1000')
+    var eleul = $(ele.target).find('ul')
+    if(eleul){
+      $(ele.target).find('ul').show('2000');
+      $(ele.target).find('ul').css({'background-color':'none !important'});
+    }
   }
 
 }

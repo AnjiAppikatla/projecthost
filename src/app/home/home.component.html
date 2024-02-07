@@ -1,4 +1,4 @@
-<div style="position: relative;">
+<!-- <div style="position: relative;">
   <div class="container-fluid pt-2">
     <div class="row mt-4">
       <div class="col-md-3 d-flex align-items-center justify-content-end">
@@ -161,5 +161,140 @@
     </svg>
   </div>
 
-</div>
+</div> -->
 
+<div>
+  <div class="nav-bg container-fluid">
+    <div class="row">
+      <div class="col-md-3 d-flex align-items-center logo_div_column">
+        <img src="../../assets/images/logo-growth.png" class="logo_img" alt="" style="width: 45px;">
+        <h1 class="bold text-white" style="margin-left: 10px;font-family: cursive;">Elite Growth</h1>
+      </div>
+      <div class="col-md-6 d-flex justify-content-center main_nav_column">
+        <div class="nav py-3">
+          <ul>
+            <li>Home</li>
+            <li>About 
+              <div>
+                <ul>
+                  <li>About Us</li>
+                  <li>Taxonomy</li>
+                </ul>
+              </div>
+            </li>
+            <li>Products 
+              <div>
+                <ul>
+                  <li>BeeCurious - STEAM Learning</li>
+                  <li>Quabits - CS Curriculum</li>
+                  <li>YELP - Experiential Learning</li>
+                  <li>Gizmos - Virtual Labs</li>
+                  <li>Litmus - Assesment Suite</li>
+                  <li>School Improvement Services</li>
+                </ul>
+              </div>
+            </li>
+            <li>Partnership</li>
+            <li>Competition</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 d-flex align-items-center justify-content-center  sidenav_column">
+        <button class="el_btn contact_us">Contact Us</button>
+        
+        <span class="side_nav text-white" style="font-size:30px;cursor:pointer;" (click)="openNav()">&#9776;</span>
+        <div id="mySidenav" class="sidenav">
+          <span class="closebtn text-white" (click)="closeNav()">&times;</span>
+          <div class="sidebar_nav py-3">
+            <ul>
+              <li (click)="uldisplay($event)">Home</li>
+              <li class="main-li" (click)="uldisplay($event)">About 
+                <div>
+                  <ul>
+                    <li>About Us</li>
+                    <li>Taxonomy</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="main-li" (click)="uldisplay($event)">Products 
+                <div>
+                  <ul>
+                    <li>BeeCurious - STEAM Learning</li>
+                    <li>Quabits - CS Curriculum</li>
+                    <li>YELP - Experiential Learning</li>
+                    <li>Gizmos - Virtual Labs</li>
+                    <li>Litmus - Assesment Suite</li>
+                    <li>School Improvement Services</li>
+                  </ul>
+                </div>
+              </li>
+              <li (click)="uldisplay($event)">Partnership</li>
+              <li (click)="uldisplay($event)">Competition</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row banner_bg">
+      <div class="col-lg-6 col-md-6 pt-5 custom_pt-5">
+        <div class="pl-5">     
+          <h1 class="mt-5 custom_mt-5">Future-Ready For</h1>
+          <h1>Experiential Learning</h1>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6">
+        <img src="../../assets/images/Green-1-remove.png" alt="" style="width: 100%;">
+      </div>
+    </div>
+  
+    <div class="p-5">
+      <div class="row p-5">
+        <div class="col-lg-8 offset-2 text-center">
+          <h1 class="theme_color mb-5">What EG ...?</h1>
+          <p class="mb-5">At Elight Growth, we believe in the transformative power of education, nutrition, and physical activity in shaping the future leaders of tomorrow. Our institution is dedicated to providing a holistic approach to children's development, focusing on both their physical and intellectual growth.</p>
+        </div>
+      </div>
+      <div class="row p-5" style="background-color: #adadad;">
+        <div class="col-lg-6">
+          <h2>Nutritional Excellence: Fueling Potential</h2>
+  
+          <p>Nutrition is the cornerstone of a child's growth and development. At Elight Growth, we understand the importance of providing balanced and nutritious meals to support optimal health and learning. Our expert nutritionists work tirelessly to design menus that are not only delicious but also packed with essential nutrients to fuel young bodies and minds.</p>
+  
+          <p>We emphasize the importance of whole foods, fresh ingredients, and mindful eating habits. Our meals are carefully crafted to provide the perfect balance of carbohydrates, proteins, fats, vitamins, and minerals necessary for growth and development. Through education and hands-on experiences, we empower children to make healthy food choices that will benefit them for a lifetime.</p>
+        </div>
+        <div class="col-lg-6 custom_order_1">
+          <img src="../../assets/images/healthy-Foods-1.jpg" alt="" style="width: 100%;" class="mb-3">
+        </div>
+      </div>
+      <div class="row p-5">
+        <div class="col-lg-6 custom_order_2">
+          <img src="../../assets/images/mind.jpg" alt="" style="width: 100%;" class="mb-3">
+        </div>
+        <div class="col-lg-6">
+          <h2>Physical Wellness: Building Strong Bodies and Confident Minds</h2>
+  
+          <p>Physical activity is vital for children's physical health, cognitive function, and emotional well-being. At Elight Growth, we offer a diverse range of physical activities and sports programs to keep children active, engaged, and healthy.</p>
+  
+          <p>From daily outdoor play to structured sports classes, our curriculum is designed to promote physical fitness, motor skills development, teamwork, and sportsmanship. Whether it's running, jumping, dancing, or playing games, our students have plenty of opportunities to move their bodies and unleash their energy in a safe and supportive environment.</p>
+        </div>
+      </div>
+      <div class="row p-5" style="background-color: #adadad;">
+        <div class="col-lg-6">
+          <h2>Join Us on the Journey to Growth and Excellence</h2>
+  
+          <p>At Elight Growth, we believe that every child has the potential to shine brightly and achieve greatness. With our focus on nutrition, physical wellness, and educational excellence, we provide the nurturing environment and support system necessary for children to thrive and reach their full potential. Join us on the journey to growth and excellence, where every child's light is celebrated and cherished.</p>
+        </div>
+        <div class="col-lg-6 custom_order_1">
+          <img src="../../assets/images/join-us.jpg" alt="" style="width: 100%;" class="mb-3">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="position-fixed" style="bottom: 10px; right: 10px;">
+    <span class="contactus_icon">
+      <img src="../../assets/images/call.png" alt="" style="width: 25px;">
+    </span>
+  </div>
+</div>
